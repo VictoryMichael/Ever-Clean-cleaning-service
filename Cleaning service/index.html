@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style-switcher (1).css">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title> Ever-Clean Cleaning Service</title>
+
+  
+  </head>
+  <body>
+
+
+
+<!--preloader start-->
+  <div class="preloader js-preloader">
+      <div></div>
+  </div>
+
+
+<!--preloader end-->
+
+
+<div class="page-wrapper">
+
+
+     <!--Header start-->
+<header class="header js-header">
+     <div class="container">
+        <div class="logo" data-aos="fade-down" data-aos-duration="1000"> <img src="data:image/png;base64,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">
+            Ever-Clean
+        </div>
+        
+
+     <button type="button" class="nav-togler js-nav-toggler" data-aos="fade-down" data-aos-duration="1000">
+        <span></span>
+     </button>
+
+        <nav class="nav js-nav">
+           <ul data-aos="fade-down" data-aos-duration="1000">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#pricing">Priceing</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contact</a></li>
+           </ul>
+        </nav>
+
+     </div>
+</header>
+     <!--Header ends-->
+
+
+
+
+
+<!--home section start-->
+ <section class="home" id="home">
+   <div class="container">
+       <div class="grid">
+           <div class="home-text">
+              <h1>Professional Cleaning Service</h1> 
+               <h2>For Your Home.</h2>
+              <p>You can rely on us to get the best cleaning service. <br> Best cleaning service in perth! </p>
+                <div class="btn-wrap">
+                   <button class="btn"><a href="about.html"></a>Our services</button>
+                </div>
+           </div>
+
+           <div class="home-img" data-aos="fade-left" data-aos-duration="2000">
+             <div class="circle-wrap">
+                  <div class="circle"></div>
+             </div>
+            <img src="home-img.png" alt="">
+         </div>
+            
+             
+       </div>
+   </div>
+ </section>
+<!--home section end-->
+
+
+
+
+<!--about section start-->
+<section class="about section-padding" id="about">
+    <div class="container">
+      <div class="grid">
+          <div class="about-img" data-aos="fade-right"  data-aos-duration="2000" >
+             <div class="img-box">
+                <img src="https://majesticcleaningpros.com.au/wp-content/uploads/2022/01/cleaning-service-perth-1.jpg" alt="">
+                  <div class="box box-1">
+                      <span>200K</span>
+                       <P>happy clients</P>
+                  </div>
+             </div>
+          </div>
+            <div class="about-text">
+              <div class="section-title">
+                 <span class="title" data-aos="fade-up" data-aos-duration="600">About Us</span>
+                  <h2 class="sub-title"  data-aos="fade-up" data-aos-duration="600">Best cleaning agants</h2>
+              </div>
+                   <p data-aos="fade-up" data-aos-duration="600">I am proud to say that we started out as a family- owned business and have grown to a team of 10 professional cleaners ready to serve you. Our business is fully licensed and insured to ease your mind when hiring a new service. Call us today .</p>
+                   <p data-aos="fade-up" data-aos-duration="600">We are Ever-Clean service providers.</p>
+                   <span><i class="fa fa-check" aria-hidden="true"></i> One Stop Shop for All Cleaning services </span> <br>
+                   <span><i class="fa fa-check" aria-hidden="true"></i>  top </span>  Over 10 years of Experience in cleaning <br>
+                   <span><i class="fa fa-check" aria-hidden="true"></i>   High-end Equipment and Cleaning Products. </span>   <br>
+                   <span><i class="fa fa-check" aria-hidden="true"></i>  All our cleaners are Qualified Trained and Experienced  </span>
+                  
+            </div>
+      </div>
+      </div>
+  </section>
+<!--about section ends-->
+
+
+
+
+
+<!--Service section start-->
+ <section class="service section-padding" id="service">
+    <div class="container">
+       <div class="section-title">
+           <span class="title">Services</span>
+             <h6 class="sub-title">What we do </h6>
+       </div>
+            <div class="grid">
+
+               <div class="service-item">
+                   <div class="img-box"> 
+
+                     <div class="sv-t">    
+                    <img src="https://25st4y48fagw1panvd24jq2y-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/Cleaning-ladies-1024x683.jpg" alt="">
+                  </div>
+
+                   </div>
+                   <h3>Regular house cleaning</h3>
+                    <p>Feel the Majestic of your house with our regular house cleaning services in Perth. We offer weekly/fortnightly domestic cleaning in Perth.</p>
+                      <button>Learn More</button>
+               </div>
+
+
+
+               <div class="service-item">
+                <div class="img-box">
+
+                   <div class="sv-t">   
+                 <img src="https://pakenhamcarpetcleaning.com.au/wp-content/uploads/2021/06/End-Of-Lease-Cleaning-Pakenham-02.jpg" alt="">
+               </div>
+
+                </div>
+                <h3>Vacate cleaning</h3>
+                 <p>Planning your move out, getting your security bond back, or require pre-sale cleaning our vacate cleaning in Perth / End of Lease.</p>
+                   <button>Learn More</button>
+            </div>
+
+
+
+            <div class="service-item">
+                <div class="img-box">
+
+                   <div class="sv-t">    
+                 <img src="https://jessicakeala.com/wp-content/uploads/2022/01/carpet-cleaning-rental.jpg" alt="">
+               </div>
+
+                </div>
+                <h3>Carpet cleaning</h3>
+                 <p>After a regular struggle, your carpet and furniture deserve lavish treatment. We are your complete professional carpet cleaning .</p>
+                   <button>Learn More</button>
+            </div>
+
+
+
+            <div class="service-item">
+                <div class="img-box"> 
+                  
+                  <div class="sv-t">    
+                 <img src="https://i.pinimg.com/originals/1d/fa/2e/1dfa2eeffad1afd4623695612e6de0ae.jpg" alt="">
+               </div>
+
+                </div>
+                <h3>Mattress Steam</h3>
+                 <p>We manage your mattress comfort zone. We are your complete professional mattress cleaning solution & service provider in .</p>
+                   <button>Learn More</button>
+            </div>
+
+
+            </div>
+    </div>
+
+
+
+
+
+ </section>
+<!--Service section ends-->
+
+
+
+
+
+<!--pricing section start-->
+   <section class="pricing section-padding" id="pricing">
+       <div class="container">
+          <div class="section-title">
+              <span class="title"  data-aos="fade-up" data-aos-duration="600">Pricing</span>
+                 <h2 class="sun-title" data-aos="fade-up" data-aos-duration="600">Our pricing plans</h2>
+          </div>
+               <div  class="grid">
+                      
+                      <!--bsic plan start-->
+                         <div class="pricing-item" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="pricing-header">
+                                <h3>Basic</h3>
+                                  <div class="price"><span>$205</span>Monthly</div>
+                            </div>
+                                <div class="pricing-body">
+                                 <ul> 
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Window cleaning</li>
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Carpet cleaning</li>
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Furniture cleaning</li>
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Oven cleaning</li>
+                                    <li><i class="fa fa-times" aria-hidden="true"></i></i>After building cleaning</li>
+                                  </ul>
+                                </div>
+                                   <div class="pricing-footer">
+                                      <a href="#" class="btn">get started</a>
+                                   </div>
+                         </div>
+                      <!--bsic plan ends-->
+
+
+  <!--premuim plan start-->
+  <div class="pricing-item" data-aos="fade-up" data-aos-duration="1000" >
+   <div class="pricing-header">
+       <h3>Premuim</h3>
+         <div class="price"><span>$399</span>Monthly</div>
+   </div>
+       <div class="pricing-body">
+        <ul> 
+           <li><i class="fa fa-check" aria-hidden="true"></i>Window cleaning</li>
+           <li><i class="fa fa-check" aria-hidden="true"></i>Carpet cleaning</li>
+           <li><i class="fa fa-check" aria-hidden="true"></i>Furniture cleaning</li>
+           <li><i class="fa fa-check" aria-hidden="true"></i>Oven cleaning</li>
+           <li><i class="fa fa-check" aria-hidden="true"></i>After building cleaning</li>
+         </ul>
+       </div>
+          <div class="pricing-footer">
+             <a href="#" class="btn">get started</a>
+          </div>
+</div>
+<!--premium plan ends-->
+
+
+
+
+  <!--standard plan start-->
+  <div class="pricing-item"  data-aos="fade-up" data-aos-duration="1000">
+   <div class="pricing-header">
+       <h3>Standard</h3>
+         <div class="price"><span>$999</span>Monthly</div>
+   </div>
+       <div class="pricing-body">
+        <ul> 
+           <li><i class="fa fa-check" aria-hidden="true"></i>Pest control</li>
+           <li><i class="fa fa-check" aria-hidden="true"></i>Deep cleaning</li>
+           <li><i class="fa fa-check" aria-hidden="true"></i>Bed steaming</li>
+           <li><i class="fa fa-check" aria-hidden="true"></i>Drainage</li>
+           <li><i class="fa fa-check" aria-hidden="true"></i>Furniture assembly</li>
+         </ul>
+       </div>
+          <div class="pricing-footer">
+             <a href="#" class="btn">get started</a>
+          </div>
+</div>
+<!--standard plan ends-->
+
+
+               </div>
+       </div>
+   </section>
+<!--pricing section ends-->
+
+
+
+
+<!--team section start-->
+<section class="team section-padding" id="team">
+  <div class="container">
+     <div class="section-title">
+         <span class="title"  data-aos="fade-up" data-aos-duration="600">Team</span>
+          <h2 class="sub-title"  data-aos="fade-up" data-aos-duration="600">Meet our team</h2>
+     </div>
+          <div class="grid">
+              
+             <div class="team-item"  data-aos="fade-up" data-aos-duration="600">
+               <div class="img-box">
+                  <img src="https://www.ontariobusinesscentral.ca/blog/wp-content/uploads/2016/11/how-to-start-a-cleaning-business.jpg" alt="">
+               </div>
+                  <div class="details">
+                      <h3>Kate James</h3>
+                       <p>Team leader</p>
+                  </div>
+             </div>
+
+             <div class="team-item"  data-aos="fade-up" data-aos-duration="1000">
+               <div class="img-box">
+                  <img src="https://c8.alamy.com/zooms/9/09b32211ebb848058c72f3cadfb52b80/w23pe5.jpg" alt="">
+               </div>
+                  <div class="details">
+                      <h3>Paul Okoro</h3>
+                       <p>IT service</p>
+                  </div>
+             </div>
+
+             <div class="team-item"  data-aos="fade-up" data-aos-duration="1000">
+               <div class="img-box">
+                  <img src="https://thumbs.dreamstime.com/b/professional-young-cleaners-cleaning-dusting-ordinary-house-71573606.jpg" alt="">
+               </div>
+                  <div class="details">
+                      <h3>John Dikeson</h3>
+                       <p>Equipment Specialist</p>
+                  </div>
+             </div>
+
+
+
+          </div>
+  </div>
+</section>
+<!--team section ends-->
+
+
+
+
+
+<!--contact section start-->
+<section class="contact section-padding" id="contact">
+    <div class="container">
+       <div class="section-title">
+          <span class="title"  data-aos="fade-up" data-aos-duration="600">Contact Us</span>
+            <h2 class="sub-title"  data-aos="fade-up" data-aos-duration="600">Have any question?</h2>
+       </div>
+          <div class="grid contact-grid">
+            <div class="contact-info">
+
+               <div class="contact-info-item"  data-aos="fade-up" data-aos-duration="600">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <h3>Address</h3>
+                  <p>No.23 st staury camp, Nigeria</p>
+               </div>
+
+
+               <div class="contact-info-item"  data-aos="fade-up" data-aos-duration="600">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <h3>Call Us</h3>
+                  <p>+234 704 186 380</p>
+               </div>
+
+
+               <div class="contact-info-item"  data-aos="fade-up" data-aos-duration="600">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <h3>Email Us</h3>
+                  <p>Everclean1@gmail.com</p>
+               </div>
+            </div>
+
+
+   <div class="contact-form">
+       <form  >
+          <div class="input-box"> 
+         <input type="text" placeholder="Name" class="input-control" required>
+      </div>
+
+      <div class="input-box"> 
+         <input type="email" placeholder="Email" class="input-control" required>
+      </div>
+
+      <div class="input-box"> 
+         <input type="number" placeholder="Phone" class="input-control" required>
+      </div>
+
+
+      <div class="input-box"> 
+         <textarea  type="text" placeholder="Message" class="input-control" required></textarea>
+      </div>
+
+       <div>
+          <button type="submit" class="btn">Send Message</button>
+       </div>
+
+
+       </form>
+   </div>
+
+
+
+          </div>
+    </div>
+</section>
+<!--contact section ends-->
+
+
+
+
+<!--style sswitcher start-->   
+
+
+<div class="style-switcher js-style-switcher">
+   <button type="button" class="style-switcher-toggler js-style-switcher-toggler">
+      <i class="fa fa-cogs" aria-hidden="true" style="color: white;"></i>
+   </button>
+     <div class="style-switcher-main">
+      <h2>Style Switcher</h2>
+         <div class="style-switcher-item">
+            <p>Theme Color</p>
+              <div class="theme-color">
+                 <input type="range" min="0" max="360"   class="hue-slider js-hue-slider" >
+                   <div class="hue">Hue:  <span class="js-hue"></span></div>
+              </div>
+         </div>
+           <div class="style-switcher-item">
+              <label class="form-switch">
+                 <span>Dark Mode</span>
+                   <input type="checkbox" class="js-dark-mode">
+                    <div class="box"></div>
+              </label>
+           </div>
+     </div>
+</div>
+
+<!--style sswitcher ends-->
+
+
+
+
+<footer class="footer">
+   <div class="container">
+        <h3>Follow Ever-clean On Socials</h3>
+          <div class="social-links">
+             <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+             <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+             <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+             <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          </div>
+              
+   </div>
+       <div class="copywright">Victory C. Michael</div>
+</footer>
+
+
+
+
+
+
+</div>
+
+
+	<script src="index.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="style switcher.js"></script>
+
+
+  
+
+
+
+  </body>
+</html>
